@@ -1,0 +1,67 @@
+Jun 18 00:20:21.253 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jun 18 00:20:21.253 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 62196.
+Jun 18 00:20:21.706 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 00:20:21.722 HYPERVISOR: exec_cmd: hypervisor working_dir d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\dynamips 
+Jun 18 00:20:21.722 GENERAL: working_dir=d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\dynamips
+Jun 18 00:20:21.738 HYPERVISOR: exec_cmd: vm create R7 7 c7200 
+Jun 18 00:20:21.738 VM: VM R7 created.
+Jun 18 00:20:21.753 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 2006 
+Jun 18 00:20:21.769 HYPERVISOR: exec_cmd: c7200 get_mac_addr R7 
+Jun 18 00:20:21.800 HYPERVISOR: exec_cmd: vm get_status R7 
+Jun 18 00:20:21.816 HYPERVISOR: exec_cmd: vm slot_add_binding R7 0 0 C7200-IO-FE 
+Jun 18 00:20:21.831 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Jun 18 00:20:21.847 HYPERVISOR: exec_cmd: vm set_ios R7 d:/Documentos/GNS3/imagenes/IOS/c7200-jk9s-mz.124-13b.image 
+Jun 18 00:20:21.878 HYPERVISOR: exec_cmd: vm get_status R7 
+Jun 18 00:20:21.909 HYPERVISOR: exec_cmd: vm slot_add_binding R7 1 0 PA-GE 
+Jun 18 00:20:21.925 HYPERVISOR: exec_cmd: vm set_ram R7 512 
+Jun 18 00:20:21.941 HYPERVISOR: exec_cmd: vm get_status R7 
+Jun 18 00:20:21.972 HYPERVISOR: exec_cmd: vm slot_add_binding R7 2 0 PA-GE 
+Jun 18 00:20:21.988 HYPERVISOR: exec_cmd: vm set_exec_area R7 64 
+Jun 18 00:20:22.004 HYPERVISOR: exec_cmd: vm set_nvram R7 512 
+Jun 18 00:20:22.020 HYPERVISOR: exec_cmd: c7200 set_mac_addr R7 ca07.19dc.0000 
+Jun 18 00:20:22.051 HYPERVISOR: exec_cmd: vm get_status R7 
+Jun 18 00:20:22.082 HYPERVISOR: exec_cmd: vm slot_add_binding R7 3 0 PA-4T+ 
+Jun 18 00:20:22.098 HYPERVISOR: exec_cmd: vm get_status R7 
+Jun 18 00:20:22.113 HYPERVISOR: exec_cmd: vm slot_remove_binding R7 0 0 
+Jun 18 00:20:22.145 HYPERVISOR: exec_cmd: vm get_status R7 
+Jun 18 00:20:22.160 HYPERVISOR: exec_cmd: vm slot_add_binding R7 0 0 C7200-IO-2FE 
+Jun 18 00:20:22.192 HYPERVISOR: exec_cmd: vm set_config R7 configs/i7_startup-config.cfg 
+Jun 18 00:20:22.473 HYPERVISOR: exec_cmd: nio create_udp udp-d3068391-6a2e-4500-8e84-1c45a93ffcdc 10026 127.0.0.1 10027 
+Jun 18 00:20:22.504 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 2 0 udp-d3068391-6a2e-4500-8e84-1c45a93ffcdc 
+Jun 18 00:20:22.520 HYPERVISOR: exec_cmd: vm get_status R7 
+Jun 18 00:20:22.567 HYPERVISOR: exec_cmd: nio create_udp udp-d97d614d-ce49-416e-adfa-af3e9ece4f7b 10029 127.0.0.1 10028 
+Jun 18 00:20:22.582 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 0 udp-d97d614d-ce49-416e-adfa-af3e9ece4f7b 
+Jun 18 00:20:22.598 HYPERVISOR: exec_cmd: vm get_status R7 
+Jun 18 00:20:24.989 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jun 18 00:20:25.005 VM: VM Ghost created.
+Jun 18 00:20:25.005 HYPERVISOR: exec_cmd: vm set_ios Ghost d:/Documentos/GNS3/imagenes/IOS/c7200-jk9s-mz.124-13b.image 
+Jun 18 00:20:25.020 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 18 00:20:25.020 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-jk9s-mz.124-13b.image-512.ghost 
+Jun 18 00:20:25.020 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jun 18 00:20:25.036 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 18 00:20:25.036 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 18 00:20:25.379 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 18 00:20:25.386 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 18 00:20:25.537 VM: VM Ghost shutdown.
+Jun 18 00:20:25.540 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 18 00:20:25.540 VM: VM Ghost destroyed.
+Jun 18 00:20:25.558 HYPERVISOR: exec_cmd: vm set_ghost_status R7 2 
+Jun 18 00:20:25.563 HYPERVISOR: exec_cmd: vm set_ghost_file R7 c7200-jk9s-mz.124-13b.image-512.ghost 
+Jun 18 00:20:25.569 HYPERVISOR: exec_cmd: vm get_status R7 
+Jun 18 00:20:25.578 HYPERVISOR: exec_cmd: vm start R7 
+Jun 18 00:23:27.667 HYPERVISOR: exec_cmd: nio bind_filter udp-d3068391-6a2e-4500-8e84-1c45a93ffcdc 2 capture 
+Jun 18 00:23:27.674 HYPERVISOR: exec_cmd: nio setup_filter udp-d3068391-6a2e-4500-8e84-1c45a93ffcdc 2 en10mb d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\captures\R7_GigabitEthernet2-0_to_R3_GigabitEthernet2-0.pcap 
+Jun 18 00:27:49.319 HYPERVISOR: exec_cmd: nio unbind_filter udp-d3068391-6a2e-4500-8e84-1c45a93ffcdc 2 
+Jun 18 00:28:13.886 HYPERVISOR: exec_cmd: vm extract_config R7 
+Jun 18 00:33:01.093 HYPERVISOR: exec_cmd: vm get_status R7 
+Jun 18 00:33:01.124 HYPERVISOR: exec_cmd: vm stop R7 
+Jun 18 00:33:01.500 VM: VM R7 shutdown.
+Jun 18 00:33:01.500 HYPERVISOR: exec_cmd: vm extract_config R7 
+Jun 18 00:33:09.714 HYPERVISOR: exec_cmd: vm extract_config R7 
+Jun 18 00:33:11.449 HYPERVISOR: exec_cmd: vm get_status R7 
+Jun 18 00:33:11.480 HYPERVISOR: exec_cmd: vm extract_config R7 
+Jun 18 00:33:11.511 HYPERVISOR: exec_cmd: vm delete R7 
+Jun 18 00:33:11.511 VM: VM R7 destroyed.
+Jun 18 00:33:11.542 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 00:33:11.996 HYPERVISOR: Stopped.
+Jun 18 00:33:11.996 GENERAL: reset done.
