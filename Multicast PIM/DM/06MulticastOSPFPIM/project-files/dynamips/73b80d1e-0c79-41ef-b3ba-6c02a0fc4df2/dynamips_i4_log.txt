@@ -1,0 +1,57 @@
+Jun 18 00:20:19.769 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jun 18 00:20:19.784 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 62182.
+Jun 18 00:20:20.191 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 00:20:20.191 HYPERVISOR: exec_cmd: hypervisor working_dir d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\dynamips 
+Jun 18 00:20:20.628 GENERAL: working_dir=d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\dynamips
+Jun 18 00:20:20.628 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Jun 18 00:20:20.644 VM: VM R4 created.
+Jun 18 00:20:20.644 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 2003 
+Jun 18 00:20:20.644 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Jun 18 00:20:20.644 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:20:20.644 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Jun 18 00:20:20.659 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Jun 18 00:20:20.659 HYPERVISOR: exec_cmd: vm set_ios R4 d:/Documentos/GNS3/imagenes/IOS/c7200-jk9s-mz.124-13b.image 
+Jun 18 00:20:20.659 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:20:20.659 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-GE 
+Jun 18 00:20:20.659 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Jun 18 00:20:20.675 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:20:20.675 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 PA-GE 
+Jun 18 00:20:20.675 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Jun 18 00:20:20.691 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Jun 18 00:20:20.691 HYPERVISOR: exec_cmd: c7200 set_mac_addr R4 ca04.3030.0000 
+Jun 18 00:20:20.706 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:20:20.722 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 PA-4T+ 
+Jun 18 00:20:20.722 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:20:20.737 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+Jun 18 00:20:20.753 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:20:20.769 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-2FE 
+Jun 18 00:20:20.800 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Jun 18 00:20:21.691 HYPERVISOR: exec_cmd: nio create_udp udp-ade52ca1-8faa-4671-aedc-fe2ab7b16abf 10000 127.0.0.1 10001 
+Jun 18 00:20:21.691 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-ade52ca1-8faa-4671-aedc-fe2ab7b16abf 
+Jun 18 00:20:21.691 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:20:21.816 HYPERVISOR: exec_cmd: nio create_udp udp-0ce56b4c-e467-453a-a9e9-9f380e372337 10003 127.0.0.1 10002 
+Jun 18 00:20:21.847 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-0ce56b4c-e467-453a-a9e9-9f380e372337 
+Jun 18 00:20:21.863 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:20:25.615 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Jun 18 00:20:25.626 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c7200-jk9s-mz.124-13b.image-512.ghost 
+Jun 18 00:20:25.632 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:20:25.641 HYPERVISOR: exec_cmd: vm start R4 
+Jun 18 00:23:14.340 HYPERVISOR: exec_cmd: nio bind_filter udp-0ce56b4c-e467-453a-a9e9-9f380e372337 2 capture 
+Jun 18 00:23:14.346 HYPERVISOR: exec_cmd: nio setup_filter udp-0ce56b4c-e467-453a-a9e9-9f380e372337 2 en10mb d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\captures\R4_GigabitEthernet1-0_to_R1_GigabitEthernet2-0.pcap 
+Jun 18 00:23:51.811 HYPERVISOR: exec_cmd: nio bind_filter udp-ade52ca1-8faa-4671-aedc-fe2ab7b16abf 2 capture 
+Jun 18 00:23:51.817 HYPERVISOR: exec_cmd: nio setup_filter udp-ade52ca1-8faa-4671-aedc-fe2ab7b16abf 2 en10mb d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\captures\R4_FastEthernet0-0_to_R5_FastEthernet3-1.pcap 
+Jun 18 00:27:37.855 HYPERVISOR: exec_cmd: nio unbind_filter udp-0ce56b4c-e467-453a-a9e9-9f380e372337 2 
+Jun 18 00:28:04.975 HYPERVISOR: exec_cmd: nio unbind_filter udp-ade52ca1-8faa-4671-aedc-fe2ab7b16abf 2 
+Jun 18 00:28:13.860 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 18 00:33:01.296 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:33:01.312 HYPERVISOR: exec_cmd: vm stop R4 
+Jun 18 00:33:01.515 VM: VM R4 shutdown.
+Jun 18 00:33:01.546 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 18 00:33:09.698 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 18 00:33:11.449 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:33:11.480 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 18 00:33:11.511 HYPERVISOR: exec_cmd: vm delete R4 
+Jun 18 00:33:11.511 VM: VM R4 destroyed.
+Jun 18 00:33:11.542 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 00:33:11.652 HYPERVISOR: Stopped.
+Jun 18 00:33:11.652 GENERAL: reset done.
