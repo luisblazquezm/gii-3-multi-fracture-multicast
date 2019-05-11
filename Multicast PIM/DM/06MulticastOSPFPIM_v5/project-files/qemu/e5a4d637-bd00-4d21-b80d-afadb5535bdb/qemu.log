@@ -1,0 +1,3 @@
+Start QEMU with 'C:\Program Files\GNS3\qemu-2.4.0\qemu-system-x86_64w.exe' -name Debian-3 -m 256M -smp cpus=1 -boot order=c -drive 'file=C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v5\project-files\qemu\e5a4d637-bd00-4d21-b80d-afadb5535bdb\hda_disk.qcow2,if=ide,index=0,media=disk' -uuid e5a4d637-bd00-4d21-b80d-afadb5535bdb -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:51140,server,nowait -net none -device e1000,mac=0c:db:27:5b:db:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10079,localaddr=127.0.0.1:10078 -nographic
+
+Execution log:

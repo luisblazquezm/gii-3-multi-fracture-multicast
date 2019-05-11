@@ -1,0 +1,22 @@
+May 11 16:37:54.222 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 11 16:37:54.223 HYPERVISOR: Started on IP = 192.168.1.36, TCP port = 63754.
+May 11 16:37:54.701 HYPERVISOR: exec_cmd: hypervisor version 
+May 11 16:37:54.701 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v5\project-files\dynamips 
+May 11 16:37:54.702 GENERAL: working_dir=C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v5\project-files\dynamips
+May 11 16:37:54.702 HYPERVISOR: exec_cmd: nio_bridge create HUB2 
+May 11 16:38:01.321 HYPERVISOR: exec_cmd: nio create_udp udp-e0a7da65-6f92-46a7-80a6-7a81c5efa3cf 10040 192.168.1.36 10041 
+May 11 16:38:01.322 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB2 udp-e0a7da65-6f92-46a7-80a6-7a81c5efa3cf 
+May 11 16:38:01.487 HYPERVISOR: exec_cmd: nio create_udp udp-e9c1a258-abc4-4d92-9ff1-0e2bb658a470 10052 192.168.1.36 10053 
+May 11 16:38:01.488 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB2 udp-e9c1a258-abc4-4d92-9ff1-0e2bb658a470 
+May 11 16:38:01.707 HYPERVISOR: exec_cmd: nio create_udp udp-bf85fb4f-10e2-4ccb-9c08-40cbfe592332 10068 192.168.1.36 10069 
+May 11 16:38:01.708 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB2 udp-bf85fb4f-10e2-4ccb-9c08-40cbfe592332 
+May 11 16:43:20.562 HYPERVISOR: exec_cmd: nio bind_filter udp-e0a7da65-6f92-46a7-80a6-7a81c5efa3cf 2 capture 
+May 11 16:43:20.563 HYPERVISOR: exec_cmd: nio setup_filter udp-e0a7da65-6f92-46a7-80a6-7a81c5efa3cf 2 en10mb C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v5\tmp\captures\HUB2_Ethernet1_to_R5_FastEthernet00.pcap 
+May 11 16:43:25.095 HYPERVISOR: exec_cmd: nio bind_filter udp-bf85fb4f-10e2-4ccb-9c08-40cbfe592332 2 capture 
+May 11 16:43:25.095 HYPERVISOR: exec_cmd: nio setup_filter udp-bf85fb4f-10e2-4ccb-9c08-40cbfe592332 2 en10mb C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v5\tmp\captures\HUB2_Ethernet2_to_Debian-3_Ethernet0.pcap 
+May 11 16:43:30.650 HYPERVISOR: exec_cmd: nio bind_filter udp-e9c1a258-abc4-4d92-9ff1-0e2bb658a470 2 capture 
+May 11 16:43:30.650 HYPERVISOR: exec_cmd: nio setup_filter udp-e9c1a258-abc4-4d92-9ff1-0e2bb658a470 2 en10mb C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v5\tmp\captures\HUB2_Ethernet0_to_Debian-4_Ethernet0.pcap 
+May 11 17:23:22.791 HYPERVISOR: exec_cmd: nio_bridge delete HUB2 
+May 11 17:23:22.837 HYPERVISOR: exec_cmd: hypervisor stop 
+May 11 17:23:23.142 HYPERVISOR: Stopped.
+May 11 17:23:23.143 GENERAL: reset done.

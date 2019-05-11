@@ -1,0 +1,60 @@
+May 11 12:29:42.834 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 11 12:29:42.835 HYPERVISOR: Started on IP = 192.168.1.36, TCP port = 52165.
+May 11 12:29:43.330 HYPERVISOR: exec_cmd: hypervisor version 
+May 11 12:29:43.331 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v4\project-files\dynamips 
+May 11 12:29:43.331 GENERAL: working_dir=C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v4\project-files\dynamips
+May 11 12:29:43.331 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v4\project-files\dynamips\05e4ec6c-6edc-43d0-a942-b86adeaf7713 
+May 11 12:29:43.332 GENERAL: working_dir=C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v4\project-files\dynamips\05e4ec6c-6edc-43d0-a942-b86adeaf7713
+May 11 12:29:43.332 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+May 11 12:29:43.333 VM: VM R1 created.
+May 11 12:29:43.334 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5018 
+May 11 12:29:43.334 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+May 11 12:29:43.334 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 12:29:43.334 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+May 11 12:29:43.334 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 11 12:29:43.335 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 11 12:29:43.336 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Luis/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+May 11 12:29:43.336 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.2f44.0000 
+May 11 12:29:43.336 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+May 11 12:29:43.336 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+May 11 12:29:43.337 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 12:29:43.337 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+May 11 12:29:43.337 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 12:29:43.337 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+May 11 12:29:43.337 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 12:29:43.338 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-GE 
+May 11 12:29:43.338 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 12:29:43.338 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 PA-GE 
+May 11 12:29:43.338 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 12:29:43.338 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 PA-4T+ 
+May 11 12:29:48.302 HYPERVISOR: exec_cmd: nio create_udp udp-f5c43ac3-8a30-426d-bdb2-76cda1957587 10014 127.0.0.1 10015 
+May 11 12:29:48.540 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-f5c43ac3-8a30-426d-bdb2-76cda1957587 
+May 11 12:29:48.541 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 12:29:49.643 HYPERVISOR: exec_cmd: nio create_udp udp-e4de78e8-2283-437b-8dd4-b7ffd960f82f 10066 127.0.0.1 10067 
+May 11 12:29:49.644 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-e4de78e8-2283-437b-8dd4-b7ffd960f82f 
+May 11 12:29:49.645 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 12:29:49.750 HYPERVISOR: exec_cmd: nio create_udp udp-e0f9343b-6b68-4e48-ba74-7abd7ad0e1ee 10072 127.0.0.1 10073 
+May 11 12:29:49.751 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 2 0 udp-e0f9343b-6b68-4e48-ba74-7abd7ad0e1ee 
+May 11 12:29:49.752 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 12:32:42.908 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+May 11 12:32:42.910 VM: VM Ghost created.
+May 11 12:32:42.910 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Luis/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+May 11 12:32:42.911 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 11 12:32:42.911 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v4\project-files\dynamips\c7200-jk9s-mz.124-13b.image-512.ghost' 
+May 11 12:32:42.911 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 12:32:42.912 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+May 11 12:32:42.912 HYPERVISOR: exec_cmd: vm start R1 
+May 11 12:33:13.240 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 13:40:33.062 HYPERVISOR: exec_cmd: nio bind_filter udp-e0f9343b-6b68-4e48-ba74-7abd7ad0e1ee 2 capture 
+May 11 13:40:33.062 HYPERVISOR: exec_cmd: nio setup_filter udp-e0f9343b-6b68-4e48-ba74-7abd7ad0e1ee 2 en10mb C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v4\tmp\captures\R1_GigabitEthernet20_to_R4_GigabitEthernet10.pcap 
+May 11 15:22:37.260 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 15:22:37.260 HYPERVISOR: exec_cmd: vm stop R1 
+May 11 15:22:37.374 VM: VM R1 shutdown.
+May 11 15:22:37.375 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 15:22:37.380 HYPERVISOR: exec_cmd: nio unbind_filter udp-e0f9343b-6b68-4e48-ba74-7abd7ad0e1ee 2 
+May 11 15:23:00.608 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 15:23:00.610 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 15:23:29.186 HYPERVISOR: Stopped.
+May 11 15:23:29.186 VM: VM Ghost destroyed.
+May 11 15:23:29.188 VM: VM R1 destroyed.
+May 11 15:23:29.191 GENERAL: reset done.

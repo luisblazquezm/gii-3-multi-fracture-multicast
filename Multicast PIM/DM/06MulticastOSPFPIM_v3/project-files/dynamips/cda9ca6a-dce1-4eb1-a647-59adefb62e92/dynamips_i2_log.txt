@@ -1,0 +1,16 @@
+May 11 09:15:24.428 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 11 09:15:24.429 HYPERVISOR: Started on IP = 192.168.1.36, TCP port = 61759.
+May 11 09:15:24.919 HYPERVISOR: exec_cmd: hypervisor version 
+May 11 09:15:24.920 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v3\project-files\dynamips 
+May 11 09:15:24.921 GENERAL: working_dir=C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v3\project-files\dynamips
+May 11 09:15:24.921 HYPERVISOR: exec_cmd: nio_bridge create HUB2 
+May 11 09:15:31.453 HYPERVISOR: exec_cmd: nio create_udp udp-020b78f0-cf30-4e0e-a059-f0d8ec169e94 10040 192.168.1.36 10041 
+May 11 09:15:31.453 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB2 udp-020b78f0-cf30-4e0e-a059-f0d8ec169e94 
+May 11 09:15:31.630 HYPERVISOR: exec_cmd: nio create_udp udp-8c95f1f5-c78c-4d71-96ab-92fb17a7c8cb 10052 192.168.1.36 10053 
+May 11 09:15:31.630 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB2 udp-8c95f1f5-c78c-4d71-96ab-92fb17a7c8cb 
+May 11 09:15:31.844 HYPERVISOR: exec_cmd: nio create_udp udp-aaab6621-f6db-408c-ac97-db0c2b5d03b2 10068 192.168.1.36 10069 
+May 11 09:15:31.844 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB2 udp-aaab6621-f6db-408c-ac97-db0c2b5d03b2 
+May 11 10:10:44.785 HYPERVISOR: exec_cmd: nio_bridge delete HUB2 
+May 11 10:10:44.843 HYPERVISOR: exec_cmd: hypervisor stop 
+May 11 10:10:45.205 HYPERVISOR: Stopped.
+May 11 10:10:45.205 GENERAL: reset done.

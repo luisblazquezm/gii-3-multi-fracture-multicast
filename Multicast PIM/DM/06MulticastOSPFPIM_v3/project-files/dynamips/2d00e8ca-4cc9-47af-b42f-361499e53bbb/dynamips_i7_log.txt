@@ -1,0 +1,18 @@
+May 11 09:15:27.117 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 11 09:15:27.118 HYPERVISOR: Started on IP = 192.168.1.36, TCP port = 61777.
+May 11 09:15:27.612 HYPERVISOR: exec_cmd: hypervisor version 
+May 11 09:15:27.612 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v3\project-files\dynamips 
+May 11 09:15:27.613 GENERAL: working_dir=C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v3\project-files\dynamips
+May 11 09:15:27.613 HYPERVISOR: exec_cmd: nio_bridge create HUB1 
+May 11 09:15:30.450 HYPERVISOR: exec_cmd: nio create_udp udp-81c28126-c011-4dd8-b6a4-da5e82b55993 10012 192.168.1.36 10013 
+May 11 09:15:30.451 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB1 udp-81c28126-c011-4dd8-b6a4-da5e82b55993 
+May 11 09:15:31.683 HYPERVISOR: exec_cmd: nio create_udp udp-4861431a-23cd-419e-b7b2-07799b55bcea 10054 192.168.1.36 10055 
+May 11 09:15:31.684 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB1 udp-4861431a-23cd-419e-b7b2-07799b55bcea 
+May 11 10:02:48.432 HYPERVISOR: exec_cmd: nio bind_filter udp-4861431a-23cd-419e-b7b2-07799b55bcea 2 capture 
+May 11 10:02:48.432 HYPERVISOR: exec_cmd: nio setup_filter udp-4861431a-23cd-419e-b7b2-07799b55bcea 2 en10mb C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v3\tmp\captures\HUB1_Ethernet1_to_Debian-1_Ethernet0.pcap 
+May 11 10:02:52.396 HYPERVISOR: exec_cmd: nio bind_filter udp-81c28126-c011-4dd8-b6a4-da5e82b55993 2 capture 
+May 11 10:02:52.396 HYPERVISOR: exec_cmd: nio setup_filter udp-81c28126-c011-4dd8-b6a4-da5e82b55993 2 en10mb C:\Users\Luis\Documents\GitHub\multi-fracture-multicast\Multicast PIM\DM\06MulticastOSPFPIM_v3\tmp\captures\HUB1_Ethernet0_to_R1_FastEthernet00.pcap 
+May 11 10:10:44.783 HYPERVISOR: exec_cmd: nio_bridge delete HUB1 
+May 11 10:10:44.805 HYPERVISOR: exec_cmd: hypervisor stop 
+May 11 10:10:44.974 HYPERVISOR: Stopped.
+May 11 10:10:44.974 GENERAL: reset done.

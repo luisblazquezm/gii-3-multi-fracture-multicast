@@ -1,0 +1,66 @@
+*May 11 13:42:44.279: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 11 13:42:44.279: IGMP(0): Set report delay time to 6.4 seconds for 224.0.1.40 on FastEthernet0/0
+*May 11 13:42:46.843: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+*May 11 13:42:48.279: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 11 13:42:48.455: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+*May 11 13:42:51.279: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 11 13:42:51.279: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 11 13:42:51.279: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 11 13:42:51.279: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 11 13:42:51.279: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 11 13:42:54.115: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 11 13:42:54.115: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 11 13:42:54.115: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 11 13:42:54.115: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+*May 11 13:43:04.259: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.20 for 239.192.0.1
+*May 11 13:43:04.259: IGMP(0): Received Group record for group 239.192.0.1, mode 2 from 61.0.0.20 for 0 sources
+*May 11 13:43:04.259: IGMP(0): WAVL Insert group: 239.192.0.1 interface: FastEthernet0/0Successful
+*May 11 13:43:04.259: IGMP(0): Switching to EXCLUDE mode for 239.192.0.1 on FastEthernet0/0
+*May 11 13:43:04.259: IGMP(0): Updating EXCLUDE group timer for 239.192.0.1
+*May 11 13:43:04.259: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,239.192.0.1) by 0
+*May 11 13:43:04.275: PIM(0): Building Graft message for 239.192.0.1, FastEthernet3/0: no entries
+*May 11 13:43:04.275: PIM(0): Building Graft message for 239.192.0.1, GigabitEthernet1/0: no entries
+*May 11 13:43:04.275: PIM(0): Building Graft message for 239.192.0.1, FastEthernet0/1: no entries
+*May 11 13:43:04.275: PIM(0): Building Graft message for 239.192.0.1, FastEthernet0/0: no entries
+*May 11 13:43:06.819: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.20 for 239.192.0.1
+*May 11 13:43:06.819: IGMP(0): Received Group record for group 239.192.0.1, mode 2 from 61.0.0.20 for 0 sources
+*May 11 13:43:06.819: IGMP(0): Updating EXCLUDE group timer for 239.192.0.1
+*May 11 13:43:06.819: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,239.192.0.1) by 0
+*May 11 13:43:12.731: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.20 for 239.192.0.1
+*May 11 13:43:12.731: IGMP(0): Received Group record for group 239.192.0.1, mode 2 from 61.0.0.20 for 0 sources
+*May 11 13:43:12.731: IGMP(0): Updating EXCLUDE group timer for 239.192.0.1
+*May 11 13:43:12.731: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,239.192.0.1) by 0
+*May 11 13:43:44.279: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 11 13:43:44.279: IGMP(0): Set report delay time to 5.1 seconds for 224.0.1.40 on FastEthernet0/0
+*May 11 13:43:46.851: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+*May 11 13:43:47.555: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.20 for 239.192.0.1
+*May 11 13:43:47.555: IGMP(0): Received Group record for group 239.192.0.1, mode 2 from 61.0.0.20 for 0 sources
+*May 11 13:43:47.555: IGMP(0): Updating EXCLUDE group timer for 239.192.0.1
+*May 11 13:43:47.555: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,239.192.0.1) by 0
+*May 11 13:43:48.279: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 11 13:43:48.451: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+*May 11 13:43:50.279: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 11 13:43:50.279: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 11 13:43:50.279: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 11 13:43:50.279: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 11 13:43:50.279: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 11 13:43:54.123: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 11 13:43:54.123: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 11 13:43:54.123: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 11 13:43:54.123: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+*May 11 13:44:44.279: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 11 13:44:44.279: IGMP(0): Set report delay time to 5.8 seconds for 224.0.1.40 on FastEthernet0/0
+*May 11 13:44:46.847: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+*May 11 13:44:48.279: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 11 13:44:48.459: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+*May 11 13:44:50.279: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 11 13:44:50.279: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 11 13:44:50.279: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 11 13:44:50.279: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 11 13:44:50.279: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 11 13:44:51.115: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 11 13:44:51.115: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 11 13:44:51.115: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 11 13:44:51.115: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+*May 11 13:44:51.435: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.20 for 239.192.0.1
+*May 11 13:44:51.435: IGMP(0): Received Group record for group 239.192.0.1, mode 2 from 61.0.0.20 for 0 sources
