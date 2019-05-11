@@ -1,4 +1,0 @@
-Start QEMU with /usr/bin/qemu-system-x86_64 -name Debian-4 -m 256M -smp cpus=1 -enable-kvm -boot order=c -drive 'file=/home/i0910465/Escritorio/multi-fracture-multicast-master/Multicast PIM/06MulticastOSPFPIM/project-files/qemu/2e9ffdaf-1532-42d7-85ff-be95bf4d289f/hda_disk.qcow2,if=ide,index=0,media=disk' -uuid 2e9ffdaf-1532-42d7-85ff-be95bf4d289f -serial telnet:127.0.0.1:5016,server,nowait -monitor tcp:127.0.0.1:51845,server,nowait -net none -device e1000,mac=00:9a:61:28:9f:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10041,localaddr=0.0.0.0:10040 -nographic
-
-Execution log:
-qemu: terminating on signal 15 from pid 2482
