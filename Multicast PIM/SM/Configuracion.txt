@@ -1,0 +1,11 @@
+config t
+ip multicast-routing
+interface FastEthernet0/0
+ip pim sparse-mode
+exit
+interface GigabitEthernet2/0
+ip pim sparse-mode
+exit
+ip pim rp-address 7.0.0.1
+exit
+wr

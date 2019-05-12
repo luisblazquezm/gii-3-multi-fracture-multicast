@@ -1,0 +1,5 @@
+show ip pim neighbor
+show ip pim interface
+show ip igmp groups
+show ip mroute
+show ip pim rp

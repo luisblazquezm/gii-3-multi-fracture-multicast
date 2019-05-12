@@ -1,0 +1,66 @@
+Jun 18 00:20:20.972 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jun 18 00:20:20.972 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 62194.
+Jun 18 00:20:21.441 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 00:20:21.441 HYPERVISOR: exec_cmd: hypervisor working_dir d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\dynamips 
+Jun 18 00:20:21.441 GENERAL: working_dir=d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\dynamips
+Jun 18 00:20:21.441 HYPERVISOR: exec_cmd: vm create R6 6 c7200 
+Jun 18 00:20:21.456 VM: VM R6 created.
+Jun 18 00:20:21.456 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 2005 
+Jun 18 00:20:21.456 HYPERVISOR: exec_cmd: c7200 get_mac_addr R6 
+Jun 18 00:20:21.456 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:20:21.472 HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 0 C7200-IO-FE 
+Jun 18 00:20:21.472 HYPERVISOR: exec_cmd: vm set_disk0 R6 0 
+Jun 18 00:20:21.472 HYPERVISOR: exec_cmd: vm set_ios R6 d:/Documentos/GNS3/imagenes/IOS/c7200-jk9s-mz.124-13b.image 
+Jun 18 00:20:21.472 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:20:21.488 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 PA-GE 
+Jun 18 00:20:21.488 HYPERVISOR: exec_cmd: vm set_ram R6 512 
+Jun 18 00:20:21.488 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:20:21.488 HYPERVISOR: exec_cmd: vm slot_add_binding R6 2 0 PA-GE 
+Jun 18 00:20:21.503 HYPERVISOR: exec_cmd: vm set_exec_area R6 64 
+Jun 18 00:20:21.503 HYPERVISOR: exec_cmd: vm set_nvram R6 512 
+Jun 18 00:20:21.503 HYPERVISOR: exec_cmd: c7200 set_mac_addr R6 ca06.2c7c.0000 
+Jun 18 00:20:21.503 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:20:21.519 HYPERVISOR: exec_cmd: vm slot_add_binding R6 3 0 PA-2FE-TX 
+Jun 18 00:20:21.519 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:20:21.519 HYPERVISOR: exec_cmd: vm slot_remove_binding R6 0 0 
+Jun 18 00:20:21.519 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:20:21.519 HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 0 C7200-IO-2FE 
+Jun 18 00:20:21.534 HYPERVISOR: exec_cmd: vm set_config R6 configs/i6_startup-config.cfg 
+Jun 18 00:20:22.051 HYPERVISOR: exec_cmd: nio create_udp udp-8def275e-2697-4c16-a90b-fb6fc58e22ac 10011 127.0.0.1 10010 
+Jun 18 00:20:22.082 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 1 udp-8def275e-2697-4c16-a90b-fb6fc58e22ac 
+Jun 18 00:20:22.098 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:20:22.129 HYPERVISOR: exec_cmd: nio create_udp udp-6ae36259-e2fe-4ddc-a0e9-7ba2c8efd74d 10013 127.0.0.1 10012 
+Jun 18 00:20:22.160 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 1 0 udp-6ae36259-e2fe-4ddc-a0e9-7ba2c8efd74d 
+Jun 18 00:20:22.192 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:20:22.457 HYPERVISOR: exec_cmd: nio create_udp udp-938b45a4-6fa0-41a2-849f-d5976f21f325 10025 127.0.0.1 10024 
+Jun 18 00:20:22.473 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 0 udp-938b45a4-6fa0-41a2-849f-d5976f21f325 
+Jun 18 00:20:22.504 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:20:22.535 HYPERVISOR: exec_cmd: nio create_udp udp-86c340d3-4a02-4c8f-8a91-fbf48d23c896 10028 127.0.0.1 10029 
+Jun 18 00:20:22.567 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 3 0 udp-86c340d3-4a02-4c8f-8a91-fbf48d23c896 
+Jun 18 00:20:22.582 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:20:25.572 HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
+Jun 18 00:20:25.584 HYPERVISOR: exec_cmd: vm set_ghost_file R6 c7200-jk9s-mz.124-13b.image-512.ghost 
+Jun 18 00:20:25.592 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:20:25.600 HYPERVISOR: exec_cmd: vm start R6 
+Jun 18 00:23:34.451 HYPERVISOR: exec_cmd: nio bind_filter udp-86c340d3-4a02-4c8f-8a91-fbf48d23c896 2 capture 
+Jun 18 00:23:34.458 HYPERVISOR: exec_cmd: nio setup_filter udp-86c340d3-4a02-4c8f-8a91-fbf48d23c896 2 en10mb d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\captures\R6_FastEthernet3-0_to_R7_FastEthernet0-0.pcap 
+Jun 18 00:23:40.540 HYPERVISOR: exec_cmd: nio bind_filter udp-6ae36259-e2fe-4ddc-a0e9-7ba2c8efd74d 2 capture 
+Jun 18 00:23:40.546 HYPERVISOR: exec_cmd: nio setup_filter udp-6ae36259-e2fe-4ddc-a0e9-7ba2c8efd74d 2 en10mb d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\captures\R6_GigabitEthernet1-0_to_R3_GigabitEthernet3-0.pcap 
+Jun 18 00:23:57.744 HYPERVISOR: exec_cmd: nio bind_filter udp-8def275e-2697-4c16-a90b-fb6fc58e22ac 2 capture 
+Jun 18 00:23:57.747 HYPERVISOR: exec_cmd: nio setup_filter udp-8def275e-2697-4c16-a90b-fb6fc58e22ac 2 en10mb d:\Documentos\GNS3\proyectos\2017_06EnunciadoOSPFPIM-DM\project-files\captures\R6_FastEthernet0-1_to_R5_FastEthernet0-1.pcap 
+Jun 18 00:27:52.015 HYPERVISOR: exec_cmd: nio unbind_filter udp-86c340d3-4a02-4c8f-8a91-fbf48d23c896 2 
+Jun 18 00:27:54.432 HYPERVISOR: exec_cmd: nio unbind_filter udp-6ae36259-e2fe-4ddc-a0e9-7ba2c8efd74d 2 
+Jun 18 00:28:02.624 HYPERVISOR: exec_cmd: nio unbind_filter udp-8def275e-2697-4c16-a90b-fb6fc58e22ac 2 
+Jun 18 00:28:13.816 HYPERVISOR: exec_cmd: vm extract_config R6 
+Jun 18 00:33:01.093 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:33:01.140 HYPERVISOR: exec_cmd: vm stop R6 
+Jun 18 00:33:01.515 VM: VM R6 shutdown.
+Jun 18 00:33:01.531 HYPERVISOR: exec_cmd: vm extract_config R6 
+Jun 18 00:33:09.667 HYPERVISOR: exec_cmd: vm extract_config R6 
+Jun 18 00:33:11.449 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 18 00:33:11.480 HYPERVISOR: exec_cmd: vm extract_config R6 
+Jun 18 00:33:11.527 HYPERVISOR: exec_cmd: vm delete R6 
+Jun 18 00:33:11.527 VM: VM R6 destroyed.
+Jun 18 00:33:11.558 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 00:33:11.996 HYPERVISOR: Stopped.
+Jun 18 00:33:11.996 GENERAL: reset done.
