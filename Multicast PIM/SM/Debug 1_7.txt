@@ -1,0 +1,949 @@
+*May 13 19:02:13.551: IGMP(0): Send v2 general Query on FastEthernet3/0
+R6#
+*May 13 19:02:14.675: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+*May 13 19:02:15.331: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:02:15.331: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:02:15.331:      for group 224.0.1.40
+*May 13 19:02:15.331: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:02:15.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:02:15.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:02:15.343:      for group 224.0.1.40
+*May 13 19:02:15.551: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+R6#
+*May 13 19:02:15.551: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:02:15.551: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:02:15.551: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:02:15.551: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:02:19.475: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.20 for 239.192.0.1
+*May 13 19:02:19.475: IGMP(0): Received Group record for group 239.192.0.1, mode 2 from 61.0.0.20 for 0 sources
+*May 13 19:02:19.475: IGMP(0): Updating EXCLUDE group timer for 239.192.0.1
+*May 13 19:02:19.475: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,239.192.0.1) by 0
+R6#
+*May 13 19:02:23.555: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 239.192.0.1
+*May 13 19:02:23.555: PIM(0): Insert (*,239.192.0.1) join in nbr 3.0.0.1's queue
+*May 13 19:02:23.555: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:02:23.555: PIM(0): Adding v2 (7.0.0.1/32, 239.192.0.1), WC-bit, RPT-bit, S-bit Join
+*May 13 19:02:23.555: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+*May 13 19:02:23.595: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:02:23.595: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+R6#
+*May 13 19:02:23.595: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:02:23.595: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:02:54.639: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:02:54.639: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:02:54.639:      for group 239.192.0.1
+R6#
+*May 13 19:03:03.955: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:03:03.955: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:03:03.955: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:03:03.955: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:03:03.955: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:03:10.551: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:03:10.551: IGMP(0): Set report delay time to 0.5 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:03:11.551: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:03:11.551: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:03:11.551: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:03:11.551: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:03:11.551: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:03:11.655: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:03:13.507: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.20 for 239.192.0.1
+*May 13 19:03:13.507: IGMP(0): Received Group record for group 239.192.0.1, mode 2 from 61.0.0.20 for 0 sources
+*May 13 19:03:13.507: IGMP(0): Updating EXCLUDE group timer for 239.192.0.1
+*May 13 19:03:13.507: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,239.192.0.1) by 0
+*May 13 19:03:13.551: IGMP(0): Send v2 general Query on FastEthernet3/0
+R6#
+*May 13 19:03:14.671: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:03:16.591: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:03:16.591: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:03:16.591: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:03:16.591: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:03:22.055: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 239.192.0.1
+*May 13 19:03:22.055: PIM(0): Insert (*,239.192.0.1) join in nbr 3.0.0.1's queue
+*May 13 19:03:22.055: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:03:22.055: PIM(0): Adding v2 (7.0.0.1/32, 239.192.0.1), WC-bit, RPT-bit, S-bit Join
+*May 13 19:03:22.055: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:03:45.335: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:03:45.335: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:03:45.335:      for group 224.0.1.40
+*May 13 19:03:45.335: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:03:45.335: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:03:45.335:      for group 224.0.1.40
+*May 13 19:03:45.335: PIM(0): Not RPF interface, group 224.0.1.40
+R6#
+*May 13 19:04:02.255: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:04:02.255: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:04:02.255: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:04:02.255: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:04:02.255: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:04:10.551: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:04:10.551: IGMP(0): Set report delay time to 0.1 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:04:11.551: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:04:11.551: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:04:11.551: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:04:11.551: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:04:11.551: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:04:11.667: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+*May 13 19:04:12.039: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.20 for 239.192.0.1
+*May 13 19:04:12.039: IGMP(0): Received Group record for group 239.192.0.1, mode 2 from 61.0.0.20 for 0 sources
+*May 13 19:04:12.039: IGMP(0): Updating EXCLUDE group timer for 239.192.0.1
+*May 13 19:04:12.039: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,239.192.0.1) by 0
+R6#
+*May 13 19:04:13.551: IGMP(0): Send v2 general Query on FastEthernet3/0
+R6#
+*May 13 19:04:14.663: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:04:19.595: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:04:19.595: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:04:19.595: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:04:19.595: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:04:21.855: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 239.192.0.1
+*May 13 19:04:21.855: PIM(0): Insert (*,239.192.0.1) join in nbr 3.0.0.1's queue
+*May 13 19:04:21.855: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:04:21.855: PIM(0): Adding v2 (7.0.0.1/32, 239.192.0.1), WC-bit, RPT-bit, S-bit Join
+*May 13 19:04:21.855: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:04:24.635: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:04:24.635: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:04:24.635:      for group 239.192.0.1
+R6#
+*May 13 19:05:00.755: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:05:00.755: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:05:00.755: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:05:00.755: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:05:00.755: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:05:10.551: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:05:10.551: IGMP(0): Set report delay time to 6.1 seconds for 224.0.1.40 on FastEthernet0/0
+R6#
+*May 13 19:05:11.663: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:05:13.551: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:05:14.091: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.20 for 239.192.0.1
+*May 13 19:05:14.091: IGMP(0): Received Group record for group 239.192.0.1, mode 2 from 61.0.0.20 for 0 sources
+*May 13 19:05:14.091: IGMP(0): Updating EXCLUDE group timer for 239.192.0.1
+*May 13 19:05:14.091: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,239.192.0.1) by 0
+R6#
+*May 13 19:05:14.667: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+*May 13 19:05:15.323: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:05:15.323: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:05:15.323:      for group 224.0.1.40
+*May 13 19:05:15.323: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:05:15.335: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:05:15.335: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:05:15.335:      for group 224.0.1.40
+R6#
+*May 13 19:05:15.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:05:15.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:05:15.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:05:15.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:05:17.551: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:05:17.551: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:05:17.551: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:05:17.551: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:05:17.551: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:05:20.955: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 239.192.0.1
+*May 13 19:05:20.955: PIM(0): Insert (*,239.192.0.1) join in nbr 3.0.0.1's queue
+*May 13 19:05:20.955: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:05:20.955: PIM(0): Adding v2 (7.0.0.1/32, 239.192.0.1), WC-bit, RPT-bit, S-bit Join
+*May 13 19:05:20.955: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#show ip pim neighbor
+PIM Neighbor Table
+Mode: B - Bidir Capable, DR - Designated Router, N - Default DR Priority,
+      S - State Refresh Capable
+Neighbor          Interface                Uptime/Expires    Ver   DR
+Address                                                            Prio/Mode
+5.0.0.1           FastEthernet0/1          00:12:19/00:01:43 v2    1 / S
+3.0.0.1           GigabitEthernet1/0       00:11:51/00:01:43 v2    1 / S
+6.0.0.2           FastEthernet3/0          00:12:19/00:01:44 v2    1 / DR S
+R6#show ip pim interface
+
+Address          Interface                Ver/   Nbr    Query  DR     DR
+                                          Mode   Count  Intvl  Prior
+61.0.0.1         FastEthernet0/0          v2/S   0      30     1      61.0.0.1
+5.0.0.2          FastEthernet0/1          v2/S   1      30     1      5.0.0.2
+3.0.0.2          GigabitEthernet1/0       v2/S   1      30     1      3.0.0.2
+6.0.0.1          FastEthernet3/0          v2/S   1      30     1      6.0.0.2
+R6#show ip igmp groups
+IGMP Connected Group Membership
+Group Address    Interface                Uptime    Expires   Last Reporter   Group Accounted
+239.192.0.1      FastEthernet0/0          00:04:11  00:02:38  61.0.0.20      
+224.0.1.40       FastEthernet3/0          00:11:21  00:02:39  6.0.0.2        
+224.0.1.40       FastEthernet0/0          00:12:21  00:02:41  61.0.0.1       
+R6#show ip mroute
+IP Multicast Routing Table
+Flags: D - Dense, S - Sparse, B - Bidir Group, s - SSM Group, C - Connected,
+       L - Local, P - Pruned, R - RP-bit set, F - Register flag,
+       T - SPT-bit set, J - Join SPT, M - MSDP created entry,
+       X - Proxy Join Timer Running, A - Candidate for MSDP Advertisement,
+       U - URD, I - Received Source Specific Host Report,
+       Z - Multicast Tunnel, z - MDT-data group sender,
+       Y - Joined MDT-data group, y - Sending to MDT-data group
+Outgoing interface flags: H - Hardware switched, A - Assert winner
+ Timers: Uptime/Expires
+ Interface state: Interface, Next-Hop or VCD, State/Mode
+
+(*, 239.192.0.1), 00:04:11/00:02:37, RP 7.0.0.1, flags: SJC
+  Incoming interface: GigabitEthernet1/0, RPF nbr 3.0.0.1
+  Outgoing interface list:
+    FastEthernet0/0, Forward/Sparse, 00:04:11/00:02:37
+
+(*, 224.0.1.40), 00:12:21/00:02:41, RP 7.0.0.1, flags: SJCL
+  Incoming interface: GigabitEthernet1/0, RPF nbr 3.0.0.1
+  Outgoing interface list:
+    FastEthernet0/0, Forward/Sparse, 00:12:21/00:02:41
+
+R6#show ip pim rp
+Group: 239.192.0.1, RP: 7.0.0.1, uptime 00:04:11, expires never
+Group: 224.0.1.40, RP: 7.0.0.1, uptime 00:12:21, expires never
+R6#
+*May 13 19:05:54.635: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:05:54.635: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:05:54.635:      for group 239.192.0.1
+R6#
+*May 13 19:05:59.055: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:05:59.055: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:05:59.055: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:05:59.055: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:05:59.055: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:06:10.551: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:06:10.551: IGMP(0): Set report delay time to 1.2 seconds for 224.0.1.40 on FastEthernet0/0
+R6#
+*May 13 19:06:11.663: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+*May 13 19:06:12.551: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:06:12.551: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:06:12.551: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:06:12.551: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:06:12.551: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:06:13.551: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:06:14.083: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.20 for 239.192.0.1
+*May 13 19:06:14.083: IGMP(0): Received Group record for group 239.192.0.1, mode 2 from 61.0.0.20 for 0 sources
+*May 13 19:06:14.083: IGMP(0): Updating EXCLUDE group timer for 239.192.0.1
+*May 13 19:06:14.083: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,239.192.0.1) by 0
+R6#
+*May 13 19:06:14.667: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:06:19.355: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 239.192.0.1
+*May 13 19:06:19.355: PIM(0): Insert (*,239.192.0.1) join in nbr 3.0.0.1's queue
+*May 13 19:06:19.355: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:06:19.355: PIM(0): Adding v2 (7.0.0.1/32, 239.192.0.1), WC-bit, RPT-bit, S-bit Join
+*May 13 19:06:19.355: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:06:21.591: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:06:21.591: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:06:21.591: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:06:21.591: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:06:45.335: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:06:45.335: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:06:45.335:      for group 224.0.1.40
+*May 13 19:06:45.335: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:06:45.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:06:45.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:06:45.343:      for group 224.0.1.40
+R6#
+*May 13 19:06:50.851: IGMP(0): Received Leave from 61.0.0.20 (FastEthernet0/0) for 239.192.0.1
+*May 13 19:06:50.851: IGMP(0): Received Group record for group 239.192.0.1, mode 3 from 61.0.0.20 for 0 sources
+*May 13 19:06:50.851: IGMP(0): Lower expiration timer to 2000 msec for 239.192.0.1 on FastEthernet0/0
+*May 13 19:06:50.851: IGMP(0): Send v2 Query on FastEthernet0/0 for group 239.192.0.1
+*May 13 19:06:51.851: IGMP(0): Send v2 Query on FastEthernet0/0 for group 239.192.0.1
+R6#
+*May 13 19:06:52.851: IGMP(0): Switching to INCLUDE mode for 239.192.0.1 on FastEthernet0/0
+*May 13 19:06:52.851: IGMP(0): MRT delete FastEthernet0/0 for (*,239.192.0.1) by 0
+*May 13 19:06:52.851: PIM(0): Insert (7.0.0.1,239.192.0.1) prune in nbr 3.0.0.1's queue
+*May 13 19:06:52.851: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:06:52.851: PIM(0): Adding v2 (7.0.0.1/32, 239.192.0.1), WC-bit, RPT-bit, S-bit Prune
+*May 13 19:06:52.851: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:06:58.155: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:06:58.155: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:06:58.155: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:06:58.155: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:06:58.155: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:07:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:07:10.851: IGMP(0): Set report delay time to 1.2 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:07:11.659: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:07:12.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:07:12.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:07:12.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:07:12.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:07:12.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 13 19:07:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+R6#
+*May 13 19:07:14.675: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:07:17.955: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 239.192.0.1
+R6#
+*May 13 19:07:23.591: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:07:23.591: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:07:23.591: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:07:23.591: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:07:57.955: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:07:57.955: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:07:57.955: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:07:57.955: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:07:57.955: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:08:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:08:10.851: IGMP(0): Set report delay time to 7.1 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:08:11.659: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:08:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:08:14.671: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:08:15.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:08:15.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:08:15.327:      for group 224.0.1.40
+*May 13 19:08:15.327: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:08:15.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:08:15.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:08:15.343:      for group 224.0.1.40
+R6#
+*May 13 19:08:17.755: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 239.192.0.1
+R6#
+*May 13 19:08:18.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:08:18.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:08:18.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:08:18.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:08:18.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:08:22.591: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:08:22.591: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:08:22.591: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:08:22.591: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:08:56.855: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:08:56.855: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:08:56.855: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:08:56.855: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:08:56.855: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:09:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:09:10.851: IGMP(0): Set report delay time to 1.1 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:09:11.663: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:09:12.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:09:12.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:09:12.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:09:12.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:09:12.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 13 19:09:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+R6#
+*May 13 19:09:14.663: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:09:22.591: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:09:22.591: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:09:22.591: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:09:22.591: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:09:45.335: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:09:45.335: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:09:45.335:      for group 224.0.1.40
+*May 13 19:09:45.335: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:09:45.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:09:45.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:09:45.339:      for group 224.0.1.40
+R6#
+*May 13 19:09:56.755: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:09:56.755: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:09:56.755: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:09:56.755: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:09:56.755: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:10:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:10:10.851: IGMP(0): Set report delay time to 4.0 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:10:11.655: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:10:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:10:14.667: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+*May 13 19:10:14.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:10:14.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:10:14.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:10:14.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:10:14.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:10:16.591: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:10:16.591: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:10:16.591: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:10:16.591: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:10:56.055: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:10:56.055: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:10:56.055: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:10:56.055: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:10:56.055: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:11:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:11:10.851: IGMP(0): Set report delay time to 3.8 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:11:11.659: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:11:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:11:14.667: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+*May 13 19:11:14.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:11:14.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:11:14.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:11:14.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:11:14.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:11:15.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:11:15.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:11:15.327:      for group 224.0.1.40
+*May 13 19:11:15.327: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:11:15.335: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:11:15.335: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:11:15.335:      for group 224.0.1.40
+R6#
+*May 13 19:11:17.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:11:17.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:11:17.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:11:17.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:11:54.455: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:11:54.455: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:11:54.455: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:11:54.455: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:11:54.455: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:12:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:12:10.851: IGMP(0): Set report delay time to 1.4 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:12:11.659: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:12:12.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:12:12.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:12:12.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:12:12.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:12:12.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 13 19:12:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+R6#
+*May 13 19:12:14.667: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:12:17.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:12:17.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:12:17.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:12:17.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:12:45.335: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:12:45.335: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:12:45.335:      for group 224.0.1.40
+*May 13 19:12:45.335: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:12:45.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:12:45.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:12:45.343:      for group 224.0.1.40
+R6#
+*May 13 19:12:52.855: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:12:52.855: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:12:52.855: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:12:52.855: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:12:52.855: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:13:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:13:10.851: IGMP(0): Set report delay time to 5.2 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:13:11.659: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:13:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:13:14.667: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:13:16.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:13:16.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:13:16.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:13:16.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:13:16.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 13 19:13:17.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:13:17.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+R6#
+*May 13 19:13:17.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:13:17.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:13:52.255: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:13:52.255: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:13:52.255: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:13:52.255: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:13:52.255: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:14:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:14:10.851: IGMP(0): Set report delay time to 7.3 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:14:11.659: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:14:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:14:14.675: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:14:15.331: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:14:15.331: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:14:15.331:      for group 224.0.1.40
+*May 13 19:14:15.331: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:14:15.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:14:15.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:14:15.343:      for group 224.0.1.40
+R6#
+*May 13 19:14:18.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:14:18.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:14:18.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:14:18.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:14:18.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 13 19:14:19.591: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:14:19.591: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+R6#
+*May 13 19:14:19.591: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:14:19.591: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:14:51.455: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:14:51.455: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:14:51.455: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:14:51.455: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:14:51.455: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:15:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:15:10.851: IGMP(0): Set report delay time to 0.8 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:15:11.655: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+*May 13 19:15:11.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:15:11.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:15:11.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:15:11.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:15:11.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:15:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:15:14.667: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:15:15.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:15:15.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:15:15.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:15:15.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:15:45.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:15:45.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:15:45.327:      for group 224.0.1.40
+*May 13 19:15:45.327: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:15:45.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:15:45.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:15:45.339:      for group 224.0.1.40
+R6#
+*May 13 19:15:50.955: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:15:50.955: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:15:50.955: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:15:50.955: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:15:50.955: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:16:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:16:10.851: IGMP(0): Set report delay time to 0.9 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:16:11.659: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+*May 13 19:16:11.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:16:11.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:16:11.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:16:11.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:16:11.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:16:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:16:14.675: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:16:20.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:16:20.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:16:20.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:16:20.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:16:49.255: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:16:49.255: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:16:49.255: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:16:49.255: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:16:49.255: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:17:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:17:10.851: IGMP(0): Set report delay time to 3.2 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:17:11.663: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:17:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:17:14.671: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+*May 13 19:17:14.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:17:14.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:17:14.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:17:14.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:17:14.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:17:15.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:17:15.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:17:15.327:      for group 224.0.1.40
+*May 13 19:17:15.327: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:17:15.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:17:15.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:17:15.339:      for group 224.0.1.40
+R6#
+*May 13 19:17:17.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:17:17.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:17:17.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:17:17.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:17:47.955: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:17:47.955: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:17:47.955: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:17:47.955: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:17:47.955: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:18:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:18:10.851: IGMP(0): Set report delay time to 0.4 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:18:11.659: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+*May 13 19:18:11.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:18:11.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:18:11.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:18:11.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:18:11.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:18:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:18:14.667: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:18:22.591: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:18:22.591: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:18:22.591: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:18:22.591: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:18:45.331: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:18:45.331: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:18:45.331:      for group 224.0.1.40
+*May 13 19:18:45.331: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:18:45.347: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:18:45.347: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:18:45.347:      for group 224.0.1.40
+R6#
+*May 13 19:18:46.755: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:18:46.755: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:18:46.755: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:18:46.755: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:18:46.755: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:19:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:19:10.851: IGMP(0): Set report delay time to 5.8 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:19:11.655: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:19:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:19:14.667: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:19:16.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:19:16.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:19:16.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:19:16.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:19:16.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 13 19:19:17.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:19:17.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+R6#
+*May 13 19:19:17.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:19:17.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:19:45.455: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:19:45.455: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:19:45.455: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:19:45.455: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:19:45.455: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:20:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:20:10.851: IGMP(0): Set report delay time to 4.6 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:20:11.663: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:20:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:20:14.671: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:20:15.331: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:20:15.331: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:20:15.331:      for group 224.0.1.40
+*May 13 19:20:15.331: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:20:15.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:20:15.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:20:15.339:      for group 224.0.1.40
+*May 13 19:20:15.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:20:15.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+R6#
+*May 13 19:20:15.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:20:15.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:20:15.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 13 19:20:16.591: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:20:16.591: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:20:16.591: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:20:16.591: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:20:44.055: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:20:44.055: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:20:44.055: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:20:44.055: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:20:44.055: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:21:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:21:10.851: IGMP(0): Set report delay time to 0.4 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:21:11.659: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+*May 13 19:21:11.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:21:11.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:21:11.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:21:11.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:21:11.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:21:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:21:14.667: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:21:23.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:21:23.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:21:23.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:21:23.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:21:43.855: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:21:43.855: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:21:43.855: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:21:43.855: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:21:43.855: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:21:45.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:21:45.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:21:45.327:      for group 224.0.1.40
+*May 13 19:21:45.327: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:21:45.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:21:45.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:21:45.339:      for group 224.0.1.40
+R6#
+*May 13 19:22:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:22:10.851: IGMP(0): Set report delay time to 7.1 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:22:11.667: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:22:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:22:14.671: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:22:18.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:22:18.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:22:18.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:22:18.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:22:18.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:22:22.591: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:22:22.591: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:22:22.591: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:22:22.591: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:22:43.355: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:22:43.355: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:22:43.355: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:22:43.355: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:22:43.355: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:23:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:23:10.851: IGMP(0): Set report delay time to 0.8 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:23:11.659: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+*May 13 19:23:11.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:23:11.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:23:11.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:23:11.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:23:11.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:23:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:23:14.663: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:23:15.331: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:23:15.331: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:23:15.331:      for group 224.0.1.40
+*May 13 19:23:15.331: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:23:15.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:23:15.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:23:15.343:      for group 224.0.1.40
+R6#
+*May 13 19:23:16.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:23:16.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:23:16.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:23:16.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:23:41.955: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:23:41.955: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:23:41.955: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:23:41.955: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:23:41.955: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:24:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:24:10.851: IGMP(0): Set report delay time to 2.7 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:24:11.663: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:24:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:24:13.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:24:13.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:24:13.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:24:13.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:24:13.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 13 19:24:14.671: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:24:23.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:24:23.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:24:23.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:24:23.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:24:40.855: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:24:40.855: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:24:40.855: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:24:40.855: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:24:40.855: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:24:45.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:24:45.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:24:45.327:      for group 224.0.1.40
+*May 13 19:24:45.327: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:24:45.331: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:24:45.331: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:24:45.331:      for group 224.0.1.40
+R6#
+*May 13 19:25:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:25:10.851: IGMP(0): Set report delay time to 5.1 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:25:11.663: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:25:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:25:14.587: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:25:14.587: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:25:14.587: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:25:14.587: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+*May 13 19:25:14.667: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:25:16.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:25:16.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:25:16.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:25:16.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:25:16.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:25:40.355: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:25:40.355: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:25:40.355: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:25:40.355: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:25:40.355: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:26:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:26:10.851: IGMP(0): Set report delay time to 2.5 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:26:11.655: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:26:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:26:13.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:26:13.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:26:13.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:26:13.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:26:13.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+*May 13 19:26:14.675: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:26:15.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:26:15.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:26:15.327:      for group 224.0.1.40
+*May 13 19:26:15.327: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:26:15.331: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:26:15.331: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:26:15.331:      for group 224.0.1.40
+R6#
+*May 13 19:26:19.595: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:26:19.595: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:26:19.595: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:26:19.595: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:26:38.555: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:26:38.555: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:26:38.555: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:26:38.555: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:26:38.555: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:27:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:27:10.851: IGMP(0): Set report delay time to 6.3 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:27:11.655: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:27:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:27:14.671: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:27:17.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:27:17.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:27:17.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:27:17.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:27:17.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:27:23.595: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:27:23.595: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:27:23.595: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:27:23.595: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:27:37.655: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:27:37.655: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:27:37.655: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:27:37.655: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:27:37.655: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:27:45.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:27:45.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:27:45.327:      for group 224.0.1.40
+*May 13 19:27:45.327: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:27:45.335: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:27:45.335: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:27:45.335:      for group 224.0.1.40
+R6#
+*May 13 19:28:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:28:10.851: IGMP(0): Set report delay time to 7.9 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:28:11.663: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+R6#
+*May 13 19:28:13.851: IGMP(0): Send v2 general Query on FastEthernet3/0
+*May 13 19:28:14.671: IGMP(0): Received v2 Query on GigabitEthernet1/0 from 3.0.0.1
+R6#
+*May 13 19:28:18.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:28:18.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:28:18.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:28:18.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:33:20.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:33:20.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:33:20.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:33:20.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:33:31.055: PIM(0): Building Periodic (*,G) Join / (S,G,RP-bit) Prune message for 224.0.1.40
+*May 13 19:33:31.055: PIM(0): Insert (*,224.0.1.40) join in nbr 3.0.0.1's queue
+*May 13 19:33:31.055: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:33:31.055: PIM(0): Adding v2 (7.0.0.1/32, 224.0.1.40), WC-bit, RPT-bit, S-bit Join
+*May 13 19:33:31.055: PIM(0): Send v2 join/prune to 3.0.0.1 (GigabitEthernet1/0)
+R6#
+*May 13 19:33:45.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:33:45.327: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:33:45.327:      for group 224.0.1.40
+*May 13 19:33:45.327: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:33:45.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:33:45.339: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:33:45.339:      for group 224.0.1.40
+*May 13 19:34:10.851: IGMP(0): Send v2 general Query on FastEthernet0/0
+*May 13 19:34:10.851: IGMP(0): Set report delay time to 0.6 seconds for 224.0.1.40 on FastEthernet0/0
+*May 13 19:34:11.663: IGMP(0): Received v2 Query on FastEthernet0/1 from 5.0.0.1
+*May 13 19:34:11.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:34:11.851: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:34:11.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:35:15.331: PIM(0): Received RP-Reachable on FastEthernet3/0 from 7.0.0.1
+*May 13 19:35:15.331:      for group 224.0.1.40
+*May 13 19:35:15.331: PIM(0): Not RPF interface, group 224.0.1.40
+*May 13 19:35:15.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:35:15.343: PIM(0): Received RP-Reachable on GigabitEthernet1/0 from 7.0.0.1
+*May 13 19:35:15.343:      for group 224.0.1.40
+*May 13 19:35:15.583: IGMP(0): Received v2 Report on FastEthernet3/0 from 6.0.0.2 for 224.0.1.40
+*May 13 19:35:15.583: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 6.0.0.2 for 0 sources
+*May 13 19:35:15.583: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:35:15.583: IGMP(0): MRT Add/Update FastEthernet3/0 for (*,224.0.1.40) by 0
+*May 13 19:35:15.851: IGMP(0): Send v2 Report for 224.0.1.40 on FastEthernet0/0
+*May 13 19:35:15.851: IGMP(0): Rec
+R6#eived v2 Report on FastEthernet0/0 from 61.0.0.1 for 224.0.1.40
+*May 13 19:35:15.851: IGMP(0): Received Group record for group 224.0.1.40, mode 2 from 61.0.0.1 for 0 sources
+*May 13 19:35:15.851: IGMP(0): Updating EXCLUDE group timer for 224.0.1.40
+*May 13 19:35:15.851: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,224.0.1.40) by 0
+R6#
+*May 13 19:35:23.835: IGMP(0): Received v2 Report on FastEthernet0/0 from 61.0.0.20 for 239.192.0.1
+*May 13 19:35:23.835: IGMP(0): Received Group record for group 239.192.0.1, mode 2 from 61.0.0.20 for 0 sources
+*May 13 19:35:23.835: IGMP(0): WAVL Insert group: 239.192.0.1 interface: FastEthernet0/0Successful
+*May 13 19:35:23.835: IGMP(0): Switching to EXCLUDE mode for 239.192.0.1 on FastEthernet0/0
+*May 13 19:35:23.835: IGMP(0): Updating EXCLUDE group timer for 239.192.0.1
+*May 13 19:35:23.835: IGMP(0): MRT Add/Update FastEthernet0/0 for (*,239.192.0.1) by 0
+*May 13 19:35:23.835: PIM(0): Check RP 7.0.0.1 into the (*, 239.192.0.1) entry
+R6#
+*May 13 19:35:23.835: PIM(0): Building Triggered (*,G) Join / (S,G,RP-bit) Prune message for 239.192.0.1
+*May 13 19:35:23.835: PIM(0): Insert (*,239.192.0.1) join in nbr 3.0.0.1's queue
+*May 13 19:35:23.835: PIM(0): Building Join/Prune packet for nbr 3.0.0.1
+*May 13 19:35:23.835: PIM(0): Adding v2 (7.0.0.1/32, 239.192.0.1), WC-bit, RPT-bit, S-bit Join
