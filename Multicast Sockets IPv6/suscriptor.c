@@ -29,7 +29,7 @@
 #define DEFAULT_INTERFACE         "l0"
 
 // This is just used to debug with a file and be able to identify procs
-int proc_id = -1;
+//int proc_id = -1;
 
 /**
   * utils.h
@@ -106,10 +106,10 @@ int multicast_subscriber(int argc, char *argv[])
     struct sockaddr_in6 subscriber_conf; /* socket structure */
 
     // Fill argument data 
-	proc_id = atoi(argv[1]);
-    strncpy(group, argv[2], sizeof(group));
-    strncpy(interface, argv[3], sizeof(group));
-    port = atoi(argv[4]);
+    //proc_id = atoi(argv[1]);
+    strncpy(group, argv[1], sizeof(group));
+    strncpy(interface, argv[2], sizeof(group));
+    port = atoi(argv[3]);
 
     // Emtpy both structures
     memset(&ipv6mreq, 0, sizeof(ipv6mreq));
@@ -199,7 +199,7 @@ void receive_msg(int s)
         } 
 
         // Write the message received into file
-        snprintf(temp_buf, sizeof(temp_buf), "New message from S%d@%s: %s\n", proc_id, multicast_group_sender, buf);
+        snprintf(temp_buf, sizeof(temp_buf), "New message from %s: %s\n", multicast_group_sender, buf);
         printmtof(temp_buf, debug_file);
     }
     
@@ -220,7 +220,7 @@ int test_args(int argc, char * argv[])
 	// There might be necessary to do some checking on host's name
 	if (argv == NULL) {
 		return -1;
-	} else if (argc != 5) {
+	} else if (argc != 4) {
 		
 		if (argc == 2 && !strcmp(argv[1], "--help")) {
 			help_msg();

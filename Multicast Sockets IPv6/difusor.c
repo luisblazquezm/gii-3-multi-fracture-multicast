@@ -104,12 +104,12 @@ int multicast_diffusor(int argc, char *argv[])
     struct sockaddr_in6 subscriber_conf, diffusor_conf; /* socket structure */
 
     // Fill argument data 
-    strncpy(group, argv[1], sizeof(group));
-    strncpy(interface, argv[2], sizeof(group));
-    port = atoi(argv[3]);
-    hops = atoi(argv[4]);
-    delay = atoi(argv[5]);
-    strncpy(buf, argv[6], sizeof(buf));
+    strncpy(buf, argv[1], sizeof(buf));
+    strncpy(group, argv[2], sizeof(group));
+    strncpy(interface, argv[3], sizeof(group));
+    port = atoi(argv[4]);
+    hops = atoi(argv[5]);
+    delay = atoi(argv[6]);
 
     // Emtpy both structures
     memset(&diffusor_conf, 0, sizeof(diffusor_conf));
@@ -118,11 +118,11 @@ int multicast_diffusor(int argc, char *argv[])
     // Fill structures for IPv6 connection
     // -- Binding structure
         subscriber_conf.sin6_family = AF_INET6;      // Family = socket IPv6
-        subscriber_conf.sin6_port = 0;  // Port
+        subscriber_conf.sin6_port = 0;               // Ephimeral Port
         subscriber_conf.sin6_addr = in6addr_any;     // Address
 
-        diffusor_conf.sin6_family = AF_INET6;      // Family = socket IPv6
-        diffusor_conf.sin6_port = htons(port);  // Port
+        diffusor_conf.sin6_family = AF_INET6;        // Family = socket IPv6
+        diffusor_conf.sin6_port = htons(port);       // Port
     
         // Fills structure address with multicast group address (its like doing strcpy)
         value = inet_pton(AF_INET6, group, &diffusor_conf.sin6_addr);
