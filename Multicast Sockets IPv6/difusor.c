@@ -30,7 +30,7 @@
 #define RETRIES	                   5		    /* number of times to retry before givin up */
 #define BUFFERSIZE	               1024	        /* maximum size of packets to be received */
 
-#define DEFAULT_MESSAGE           "Hola que tal"
+#define DEFAULT_MESSAGE           "Holaquetal"
 #define DEFAULT_PORT              5001
 #define DEFAULT_MULTICAST_GROUP   "ff15::33"
 #define DEFAULT_INTERFACE         "eth0"
@@ -215,7 +215,7 @@ int test_args(int argc, char * argv[])
 {
     
     // There might be necessary to do some checking on host's name
-    if (argv == NULL || argc != 4) {
+    if (argv == NULL || argc != 7) {
         return -1;
     } 
     
