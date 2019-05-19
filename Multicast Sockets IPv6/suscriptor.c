@@ -9,27 +9,31 @@
 
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <sys/time.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <netdb.h>
+#include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <signal.h>
-#include <netdb.h>
 #include <string.h>
-#include <ctype.h>
-#include <string.h>
+#include <sys/stat.h>
+#include <sys/uio.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <net/if.h>
 
 #define IPV6_DIR_SIZE              80
 #define ADDRNOTFOUND	           0xffffffff	/* value returned for unknown host */
 #define RETRIES	                   5		    /* number of times to retry before givin up */
 #define BUFFERSIZE	               1024	        /* maximum size of packets to be received */
 
-#define DEFAULT_PORT              7878
+#define DEFAULT_PORT              5001
 #define DEFAULT_MULTICAST_GROUP   "ff15::33"
-#define DEFAULT_INTERFACE         "l0"
+#define DEFAULT_INTERFACE         "eth0"
 
-// This is just used to debug with a file and be able to identify procs
-//int proc_id = -1;
 
 /**
   * utils.h
@@ -44,10 +48,15 @@ int register_SIGINT();
 void SIGINT_handler();
 void receive_msg(int s);
 
+int printmtof(char *msg, char *filename);
+
+int s = -1 ;                         /* socket descriptor */
+struct ipv6_mreq ipv6mreq;           /* IPv6 multicast request structure */
+
 void SIGINT_hdlr()
 {
- printf("Terminated\n\n");
- exit(1);
+    printf("Terminated\n\n");
+    exit(1);
 }
 
 int register_SIGINT()
@@ -83,7 +92,6 @@ int register_SIGINT()
 int main(int argc, char *argv[])
 {   
     int value = -5;
-    value = test_args(argc, argv);
 
     if (-1 == value || 1 == value) 
         return -1;
@@ -96,20 +104,28 @@ int main(int argc, char *argv[])
 
 int multicast_subscriber(int argc, char *argv[])
 {
-	int s;				                 /* socket descriptor */
-    int value = 0;
+
+    int value = -2;
     char group[IPV6_DIR_SIZE];
     char interface[IPV6_DIR_SIZE];  
     int port;
-
-    struct ipv6_mreq ipv6mreq;           /* IPv6 multicast request structure */
     struct sockaddr_in6 subscriber_conf; /* socket structure */
 
     // Fill argument data 
-    //proc_id = atoi(argv[1]);
-    strncpy(group, argv[1], sizeof(group));
-    strncpy(interface, argv[2], sizeof(group));
-    port = atoi(argv[3]);
+    value = test_args(argc, argv);
+    if (-1 == value){ // Assign default values
+
+        strncpy(group, DEFAULT_MULTICAST_GROUP, sizeof(DEFAULT_MULTICAST_GROUP));
+        strncpy(interface, DEFAULT_INTERFACE, sizeof(DEFAULT_INTERFACE));
+        port = DEFAULT_PORT;
+
+    } else {
+        
+        strncpy(group, argv[1], sizeof(group));
+        strncpy(interface, argv[2], sizeof(group));
+        port = atoi(argv[3]);
+
+    }
 
     // Emtpy both structures
     memset(&ipv6mreq, 0, sizeof(ipv6mreq));
@@ -218,17 +234,8 @@ int test_args(int argc, char * argv[])
 {
 	
 	// There might be necessary to do some checking on host's name
-	if (argv == NULL) {
+	if (argv == NULL || argc != 4) {
 		return -1;
-	} else if (argc != 4) {
-		
-		if (argc == 2 && !strcmp(argv[1], "--help")) {
-			help_msg();
-			return 1;
-		} else {
-			short_help_msg();
-			return -1;
-		}
 	} 
 	
 	return 0;

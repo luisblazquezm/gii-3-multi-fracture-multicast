@@ -9,24 +9,33 @@
 
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <sys/time.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <netdb.h>
+#include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <signal.h>
-#include <netdb.h>
 #include <string.h>
-#include <ctype.h>
-#include <string.h>
+#include <sys/stat.h>
+#include <sys/uio.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <net/if.h>
 
 #define IPV6_DIR_SIZE              80
 #define ADDRNOTFOUND	           0xffffffff	/* value returned for unknown host */
 #define RETRIES	                   5		    /* number of times to retry before givin up */
 #define BUFFERSIZE	               1024	        /* maximum size of packets to be received */
 
-#define DEFAULT_PORT              7878
+#define DEFAULT_MESSAGE           "Hola que tal"
+#define DEFAULT_PORT              5001
 #define DEFAULT_MULTICAST_GROUP   "ff15::33"
-#define DEFAULT_INTERFACE         "l0"
+#define DEFAULT_INTERFACE         "eth0"
+#define DEFAULT_HOPS              15
+#define DEFAULT_DELAY             10
 
 /**
   * utils.h
@@ -36,10 +45,12 @@ int invalid_option_msg(char * opt);
 int short_help_msg(void);
 int help_msg(void);
 
-int multicast_subscriber(int argc, char *argv[]);
+int multicast_diffusor(int argc, char *argv[]);
 int register_SIGINT();
 void SIGINT_handler();
 void send_msg(int s, char *msg, struct sockaddr_in6 diffusor_conf);
+
+int printmtof(char *msg, char *filename);
 
 void SIGINT_hdlr()
 {
@@ -104,19 +115,34 @@ int multicast_diffusor(int argc, char *argv[])
     struct sockaddr_in6 subscriber_conf, diffusor_conf; /* socket structure */
 
     // Fill argument data 
-    strncpy(buf, argv[1], sizeof(buf));
-    strncpy(group, argv[2], sizeof(group));
-    strncpy(interface, argv[3], sizeof(group));
-    port = atoi(argv[4]);
-    hops = atoi(argv[5]);
-    delay = atoi(argv[6]);
+    value = test_args(argc, argv);
+    if (-1 == value){ // Assign default values
+
+        strncpy(buf, DEFAULT_MESSAGE, sizeof(DEFAULT_MESSAGE));
+        strncpy(group, DEFAULT_MULTICAST_GROUP, sizeof(DEFAULT_MULTICAST_GROUP));
+        strncpy(interface, DEFAULT_INTERFACE, sizeof(DEFAULT_INTERFACE));
+        port = DEFAULT_PORT;
+        hops = DEFAULT_HOPS;
+        delay = DEFAULT_DELAY;
+
+    } else {
+        
+        strncpy(buf, argv[1], sizeof(buf));
+        strncpy(group, argv[2], sizeof(group));
+        strncpy(interface, argv[3], sizeof(group));
+        port = atoi(argv[4]);
+        hops = atoi(argv[5]);
+        delay = atoi(argv[6]);
+
+    }
 
     // Emtpy both structures
     memset(&diffusor_conf, 0, sizeof(diffusor_conf));
     memset(&subscriber_conf, 0, sizeof(subscriber_conf));
 
     // Fill structures for IPv6 connection
-    // -- Binding structure
+
+        // -- Binding structure
         subscriber_conf.sin6_family = AF_INET6;      // Family = socket IPv6
         subscriber_conf.sin6_port = 0;               // Ephimeral Port
         subscriber_conf.sin6_addr = in6addr_any;     // Address
@@ -187,22 +213,13 @@ void send_msg(int s, char *msg, struct sockaddr_in6 diffusor_conf)
 ***************************************/
 int test_args(int argc, char * argv[])
 {
-	
-	// There might be necessary to do some checking on host's name
-	if (argv == NULL) {
-		return -1;
-	} else if (argc != 7) {
-		printf("%d\n", argc);
-		if (argc == 2 && !strcmp(argv[1], "--help")) {
-			help_msg();
-			return 1;
-		} else {
-			short_help_msg();
-			return -1;
-		}
-	} 
-	
-	return 0;
+    
+    // There might be necessary to do some checking on host's name
+    if (argv == NULL || argc != 4) {
+        return -1;
+    } 
+    
+    return 0;
 }
 
 /************************************
