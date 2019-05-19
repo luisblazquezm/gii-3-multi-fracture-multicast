@@ -1,7 +1,0 @@
-El servidor no tiene parámetros y escucha en el puerto 8713 puesto que para lanzarlo en el puerto 13 (el del servicio de daytime) necesitarmos permisos de administrador.
-
-El cliente recibe por parámetros la IPv6 del servidor. Ejemplo: cli ::1
-
-Si la IPv6 es de ámbito local se ha de especificar la interfaz de red de la siguiente forma: cli fe80::a10d:4fd4:22ca:3e1d%eth0
-
-Podemos ver el tipo de sockets creado con la orden: lsof -Pni

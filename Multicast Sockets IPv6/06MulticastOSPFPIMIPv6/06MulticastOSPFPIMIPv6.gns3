@@ -2,7 +2,7 @@
     "auto_close": true,
     "auto_open": false,
     "auto_start": false,
-    "grid_size": 0,
+    "grid_size": 75,
     "name": "06MulticastOSPFPIMIPv6",
     "project_id": "ebca3cb1-7af4-4b0e-98b9-c05da9a39a61",
     "revision": 8,
@@ -163,7 +163,7 @@
             {
                 "drawing_id": "32d3aab2-4eff-40ec-86e3-1f62cd478675",
                 "rotation": 0,
-                "svg": "<svg height=\"29\" width=\"175\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">2001::db8:1:5::/64</text></svg>",
+                "svg": "<svg height=\"24\" width=\"134\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">2001::db8:1:5::/64</text></svg>",
                 "x": -197,
                 "y": 5,
                 "z": 1
@@ -1641,5 +1641,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.1.15",
-    "zoom": 100
+    "zoom": 71
 }

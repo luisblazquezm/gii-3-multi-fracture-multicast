@@ -1,3 +1,2 @@
-show ip igmp groups
-show ip mroute
-show ip pim rp
+show ipv6 mroute
+show ipv6 mld groups
